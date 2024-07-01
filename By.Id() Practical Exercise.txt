@@ -1,0 +1,19 @@
+
+1. Create locators for the following elements and indicate if the ids are unique on the page.
+a. Username field
+    Answer: By.Id("Username"), dom=document.getElementById("Username"), and it is unique
+b. Password field
+    Answer: By.Id("Password"), dom=document.getElementById("Password"), and it is unique
+
+2. Does the "Log In" button have an id? Yes/No
+    Answer: No, it has not been given a unique id.
+
+3. List three additional elements on the page that have ids.
+    Answer: top-navbar, products, and banking
+
+Bonus:
+What locator could you use to locate all elements on the page that have an id using the dev tools console?
+    Answer: You would use a CSS selector to find all elements with the attribute id, in addition I had to use document.querySelectorAll() method
+            in order to return a list of nodes that contain an id. A shorter version uses $$("[id]")
+               document.querySelectorAll("[id]")
+               $$("[id]")
